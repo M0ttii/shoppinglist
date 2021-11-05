@@ -2,6 +2,7 @@ package com.github.m0ttii.shoppinglist.entities;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.ArrayList;
@@ -11,7 +12,7 @@ import java.util.ArrayList;
 @Document("shoppinglists")
 public class ShoppingListEntity {
 
-    private String id;
+    @Id private String id;
     private ArrayList<ItemEntity> content;
     private ArrayList<UserEntity> users;
 

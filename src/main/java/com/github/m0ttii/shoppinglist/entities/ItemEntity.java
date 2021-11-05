@@ -15,8 +15,11 @@ public class ItemEntity {
     private Integer quantity;
     private Boolean check;
 
-    public ItemEntity(String id, String name, Integer quantity, Boolean check){
-        this.id = id;
+    public ItemEntity(String name){
+        this.name = name;
+    }
+
+    public ItemEntity(String name, Integer quantity, Boolean check){
         this.name = name;
         this.quantity = quantity;
         this.check = check;
